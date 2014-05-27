@@ -14,7 +14,7 @@
  * This is needed for cookie based authentication to encrypt password in
  * cookie
  */
-$cfg['blowfish_secret'] = 'IAidf85HCBEhbvqwbfvUIYREBCW927SWRHC35sUEYWRGt3'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = 'HAPPY_SECRET'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 /*
  * Servers configuration
@@ -42,8 +42,8 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 /* User used to manipulate with storage */
 $cfg['Servers'][$i]['controlhost'] = 'localhost';
 $cfg['Servers'][$i]['controlport'] = '3306';
-$cfg['Servers'][$i]['controluser'] = 'pma';
-$cfg['Servers'][$i]['controlpass'] = 'pma';
+$cfg['Servers'][$i]['controluser'] = 'HAPPY_USER';
+$cfg['Servers'][$i]['controlpass'] = 'HAPPY_PASSWORD';
 
 /* Storage database and tables */
 $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
@@ -62,6 +62,7 @@ $cfg['Servers'][$i]['recent'] = 'pma__recent';
 $cfg['Servers'][$i]['users'] = 'pma__users';
 $cfg['Servers'][$i]['usergroups'] = 'pma__usergroups';
 $cfg['Servers'][$i]['navigationhiding'] = 'pma__navigationhiding';
+$cfg['Servers'][$i]['savedsearches'] = 'pma__savedsearches';
 
 /* Contrib / Swekey authentication */
 // $cfg['Servers'][$i]['auth_swekey_config'] = '/etc/swekey-pma.conf';
@@ -107,7 +108,7 @@ $cfg['SaveDir'] = '';
  * uncomment the desired line:
  * default = 'en'
  */
-//$cfg['DefaultLang'] = 'en';
+$cfg['DefaultLang'] = 'fr';
 //$cfg['DefaultLang'] = 'de';
 
 /**
@@ -151,4 +152,3 @@ $cfg['SaveDir'] = '';
  * in the doc/ folder or at <http://docs.phpmyadmin.net/>.
  */
 ?>
-
