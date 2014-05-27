@@ -141,6 +141,7 @@ sudo apt-get install -y php-pear # Installing Pear - http://pear.php.net
 pear update-channels # Update package lists
 pear upgrade-all # Upgrade what's available
 sudo pecl install uploadprogress # Install PECL upload progress library for Drupal
+sudo apt-get install php5-mcrypt # Install mcrypt
 sudo service apache2 restart # restart apache so latest php config is picked up
 
 # Version control tools
