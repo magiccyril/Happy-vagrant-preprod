@@ -9,17 +9,6 @@
 		Require all granted
 	</Directory>
 
-	Alias /phpmyadmin "/var/www/phpmyadmin"
-	<Directory "/var/www/phpmyadmin">
-		Options FollowSymlinks
-		AllowOverride None
-		Order allow,deny
-		Allow from all
-        </Directory>
-
-
-	ErrorLog ${APACHE_LOG_DIR}/error.log
-
 	# Possible values include: debug, info, notice, warn, error, crit,
 	# alert, emerg.
 	LogLevel warn
