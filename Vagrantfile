@@ -26,7 +26,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ## Provision ##
   ###############
   config.vm.provision :shell, :inline => "
-      sh /vagrant/vagrant-scripts/provision-web-php.sh;
+    sh /vagrant/vagrant-scripts/provision-web-php.sh;
+    sh /vagrant/vagrant-scripts/provision-phpmyadmin.sh;
   "
 
 end
