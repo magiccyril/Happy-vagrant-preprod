@@ -18,7 +18,7 @@
 HOSTNAME="preprod"
 
 # MySQL password
-MYSQL_PASS="root" # can be altered, though storing passwords in a script is a bad idea!
+MYSQL_PASS="HAPPY_PASSWORD" # can be altered, though storing passwords in a script is a bad idea!
 
 # Locale
 LOCALE_LANGUAGE="fr_FR" # can be altered to your prefered locale, see http://docs.moodle.org/dev/Table_of_locales
