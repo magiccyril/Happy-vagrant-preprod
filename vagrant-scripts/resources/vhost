@@ -1,0 +1,34 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www/vagrant/www
+
+	<Directory /var/www/vagrant/repository>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Require all granted
+	</Directory>
+
+	Alias /phpmyadmin "/var/www/phpmyadmin"
+	<Directory "/var/www/phpmyadmin">
+		Options FollowSymlinks
+		AllowOverride None
+		Order allow,deny
+		Allow from all
+        </Directory>
+
+	Alias /test "/var/www/test"
+	<Directory "/var/www/test">
+		Options FollowSymlinks
+		AllowOverride None
+		Order allow,deny
+		Allow from all
+        </Directory>
+
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+</VirtualHost>
